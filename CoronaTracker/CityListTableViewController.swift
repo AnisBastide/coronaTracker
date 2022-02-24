@@ -8,33 +8,28 @@
 import UIKit
 
 class CityListTableViewController: UITableViewController {
-    let url = URL(string:"https://coronavirusapifr.herokuapp.com/data/departement/Paris/12-02-2022")!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let decoder = JSONDecoder()
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        let task = session.dataTask(with:url){
-            (data, response,error) in
-            if error != nil{
-                print(error!.localizedDescription)
-            }
-            else{
-                if let json = try? JSONSerialization.jsonObject(with:data!,
-                                                                options:.mutableContainers){
-                    if let data = json as? [[String:AnyObject]]{
-                        print(data)
-                        let covid = covidData(data['hosp'],data['incid_hosp'],data['rea'],data['incid_rea'],data['dchosp'],data['reg'],data['lib_reg'],data['lib_dep'],data['R'])
-                        print(covid)
-//                        if let items = data[1]["items"] as? [[String:AnyObject]]{
-//                            for item in items {
-//                                print(item["titre"]!)
-//                            }
+        var covidDataList = [] as [covidData]
+        let dateList = ["11-02-2022","12-02-2022","13-02-2022","14-02-2022","15-02-2022","16-02-2022","17-02-2022"]
+        for date in dateList {
+            getDataFromApi(_city:"Paris", _date:date,{covidData in
+                covidDataList.append(covidData)
+                //print(covidDataList)
+                
+                if((dateList.firstIndex(of: date)) == dateList.count - 1){
+                    DispatchQueue.main.async {
+                        if let vc = UIStoryboard(name:"Main",bundle:nil).instantiateViewController(identifier:"Detail") as? DetailViewController{
+                            vc.covidDataList = covidDataList
+                            //self.present(vc,animated: true,completion: nil)
+                            self.navigationController?.pushViewController(vc, animated: true)
                         }
                     }
                 }
-            }
-        task.resume()
+            })
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -108,18 +103,40 @@ class CityListTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func getDataFromApi(_city:String,_date:String,_ completion: @escaping (covidData) -> ()){
+        let url = URL(string:"https://coronavirusapifr.herokuapp.com/data/departement/\(_city)/\(_date)")!
+        //print("blblblblblb")
+        //print(url)
+        let config = URLSessionConfiguration.default
 
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with:url, completionHandler: { data,response,error in
+                                    if error != nil {
+            print(error?.localizedDescription ?? "error")
+            }else {
+            if let json = try? JSONSerialization.jsonObject(with:data!,
+                                                            options:.mutableContainers){
+                if let data = json as? [[String:AnyObject]] {
+                    //print(data)
+                    let covid = covidData(hosp: data[0]["hosp"] as? NSNumber,incid_hosp: data[0]["incid_hosp"] as? NSNumber,dchosp: data[0]["dchosp"] as? NSNumber ,rea: data[0]["rea"] as? NSNumber,incid_rea: data[0]["incid_rea"] as? NSNumber,reg: data[0]["reg"] as? NSNumber ,lib_dep: data[0]["lib_dep"] as? String,lib_reg: data[0]["lib_reg"] as? String,R: data[0]["R"] as? NSNumber)
+                    completion(covid)
+                }}
+            };
+        })
+        task.resume()
+    }
 }
 
 
 struct covidData{
-    let hosp : Int
-    let incid_hosp : Int
-    let dchosp : Int
-    let rea : Int
-    let incid_rea : Int
-    let reg : String
-    let lib_dep : String
-    let lib_reg : String
-    let R : Int
+    let hosp : NSNumber?
+    let incid_hosp : NSNumber?
+    let dchosp : NSNumber?
+    let rea : NSNumber?
+    let incid_rea : NSNumber?
+    let reg : NSNumber?
+    let lib_dep : String?
+    let lib_reg : String?
+    let R : NSNumber?
 }
