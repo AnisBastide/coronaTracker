@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC38899C27C7EE4300B2C0AF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38899B27C7EE4300B2C0AF /* DetailViewController.swift */; };
+		FC38899E27C7EF8200B2C0AF /* CityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38899D27C7EF8200B2C0AF /* CityListTableViewController.swift */; };
+		FC3889A127C7F01300B2C0AF /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = FC3889A027C7F01300B2C0AF /* TinyConstraints */; };
 		FC3FDE9827C632DE00620D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9727C632DE00620D6C /* AppDelegate.swift */; };
 		FC3FDE9A27C632DE00620D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */; };
 		FC3FDE9C27C632DE00620D6C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */; };
@@ -15,7 +18,27 @@
 		FC3FDEA427C632E100620D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDEA227C632E100620D6C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC3889A727C7F0B900B2C0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3889A227C7F0B900B2C0AF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		FC3889A927C7F0B900B2C0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3889A227C7F0B900B2C0AF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FC38899B27C7EE4300B2C0AF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FC38899D27C7EF8200B2C0AF /* CityListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewController.swift; sourceTree = "<group>"; };
+		FC3889A227C7F0B900B2C0AF /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		FC3FDE9427C632DE00620D6C /* CoronaTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3FDE9727C632DE00620D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +54,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3889A127C7F01300B2C0AF /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3889A327C7F0B900B2C0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3889A827C7F0B900B2C0AF /* Charts.framework */,
+				FC3889AA27C7F0B900B2C0AF /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FC3FDE8B27C632DE00620D6C = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +89,11 @@
 		FC3FDE9627C632DE00620D6C /* CoronaTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FC3889A227C7F0B900B2C0AF /* Charts.xcodeproj */,
 				FC3FDE9727C632DE00620D6C /* AppDelegate.swift */,
 				FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */,
+				FC38899B27C7EE4300B2C0AF /* DetailViewController.swift */,
+				FC38899D27C7EF8200B2C0AF /* CityListTableViewController.swift */,
 				FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */,
 				FC3FDE9D27C632DE00620D6C /* Main.storyboard */,
 				FC3FDEA027C632E100620D6C /* Assets.xcassets */,
@@ -83,6 +119,9 @@
 			dependencies = (
 			);
 			name = CoronaTracker;
+			packageProductDependencies = (
+				FC3889A027C7F01300B2C0AF /* TinyConstraints */,
+			);
 			productName = CoronaTracker;
 			productReference = FC3FDE9427C632DE00620D6C /* CoronaTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,14 +150,40 @@
 				Base,
 			);
 			mainGroup = FC3FDE8B27C632DE00620D6C;
+			packageReferences = (
+				FC38899F27C7F01300B2C0AF /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = FC3FDE9527C632DE00620D6C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FC3889A327C7F0B900B2C0AF /* Products */;
+					ProjectRef = FC3889A227C7F0B900B2C0AF /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FC3FDE9327C632DE00620D6C /* CoronaTracker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FC3889A827C7F0B900B2C0AF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = FC3889A727C7F0B900B2C0AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FC3889AA27C7F0B900B2C0AF /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = FC3889A927C7F0B900B2C0AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FC3FDE9227C632DE00620D6C /* Resources */ = {
@@ -141,6 +206,8 @@
 				FC3FDE9C27C632DE00620D6C /* VideoViewController.swift in Sources */,
 				FC3FDE9827C632DE00620D6C /* AppDelegate.swift in Sources */,
 				FC3FDE9A27C632DE00620D6C /* SceneDelegate.swift in Sources */,
+				FC38899C27C7EE4300B2C0AF /* DetailViewController.swift in Sources */,
+				FC38899E27C7EF8200B2C0AF /* CityListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC38899F27C7F01300B2C0AF /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC3889A027C7F01300B2C0AF /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC38899F27C7F01300B2C0AF /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC3FDE8C27C632DE00620D6C /* Project object */;
 }
