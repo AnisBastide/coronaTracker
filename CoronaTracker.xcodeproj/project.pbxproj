@@ -9,58 +9,21 @@
 /* Begin PBXBuildFile section */
 		FC3FDE9827C632DE00620D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9727C632DE00620D6C /* AppDelegate.swift */; };
 		FC3FDE9A27C632DE00620D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */; };
-		FC3FDE9C27C632DE00620D6C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9B27C632DE00620D6C /* DetailViewController.swift */; };
+		FC3FDE9C27C632DE00620D6C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */; };
 		FC3FDE9F27C632DE00620D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDE9D27C632DE00620D6C /* Main.storyboard */; };
 		FC3FDEA127C632E100620D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDEA027C632E100620D6C /* Assets.xcassets */; };
 		FC3FDEA427C632E100620D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FDEA227C632E100620D6C /* LaunchScreen.storyboard */; };
-		FC3FDEB527C638A900620D6C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3FDEB127C6383900620D6C /* Charts.framework */; platformFilter = ios; };
-		FC3FDEB627C638A900620D6C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC3FDEB127C6383900620D6C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FCE0419F27C63C8C00CE1266 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = FCE0419E27C63C8C00CE1266 /* TinyConstraints */; };
-		FCE041A327C661AF00CE1266 /* CityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE041A227C661AF00CE1266 /* CityListTableViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FC3FDEB027C6383900620D6C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC3FDEAB27C6383900620D6C /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		FC3FDEB227C6383900620D6C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC3FDEAB27C6383900620D6C /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FC3FDEB727C638A900620D6C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FC3FDEB627C638A900620D6C /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC3FDE9427C632DE00620D6C /* CoronaTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3FDE9727C632DE00620D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC3FDE9B27C632DE00620D6C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		FC3FDE9E27C632DE00620D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC3FDEA027C632E100620D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3FDEA327C632E100620D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3FDEA527C632E100620D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC3FDEAB27C6383900620D6C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
-		FCE041A227C661AF00CE1266 /* CityListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3FDEB527C638A900620D6C /* Charts.framework in Frameworks */,
-				FCE0419F27C63C8C00CE1266 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +42,6 @@
 			children = (
 				FC3FDE9627C632DE00620D6C /* CoronaTracker */,
 				FC3FDE9527C632DE00620D6C /* Products */,
-				FC3FDEB427C6386E00620D6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,31 +58,13 @@
 			children = (
 				FC3FDE9727C632DE00620D6C /* AppDelegate.swift */,
 				FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */,
-				FC3FDE9B27C632DE00620D6C /* DetailViewController.swift */,
+				FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */,
 				FC3FDE9D27C632DE00620D6C /* Main.storyboard */,
-				FCE041A227C661AF00CE1266 /* CityListTableViewController.swift */,
 				FC3FDEA027C632E100620D6C /* Assets.xcassets */,
 				FC3FDEA227C632E100620D6C /* LaunchScreen.storyboard */,
 				FC3FDEA527C632E100620D6C /* Info.plist */,
-				FC3FDEAB27C6383900620D6C /* Charts.xcodeproj */,
 			);
 			path = CoronaTracker;
-			sourceTree = "<group>";
-		};
-		FC3FDEAC27C6383900620D6C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FC3FDEB127C6383900620D6C /* Charts.framework */,
-				FC3FDEB327C6383900620D6C /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FC3FDEB427C6386E00620D6C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,16 +77,12 @@
 				FC3FDE9027C632DE00620D6C /* Sources */,
 				FC3FDE9127C632DE00620D6C /* Frameworks */,
 				FC3FDE9227C632DE00620D6C /* Resources */,
-				FC3FDEB727C638A900620D6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CoronaTracker;
-			packageProductDependencies = (
-				FCE0419E27C63C8C00CE1266 /* TinyConstraints */,
-			);
 			productName = CoronaTracker;
 			productReference = FC3FDE9427C632DE00620D6C /* CoronaTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -173,40 +111,14 @@
 				Base,
 			);
 			mainGroup = FC3FDE8B27C632DE00620D6C;
-			packageReferences = (
-				FCE0419D27C63C8B00CE1266 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
-			);
 			productRefGroup = FC3FDE9527C632DE00620D6C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FC3FDEAC27C6383900620D6C /* Products */;
-					ProjectRef = FC3FDEAB27C6383900620D6C /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FC3FDE9327C632DE00620D6C /* CoronaTracker */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FC3FDEB127C6383900620D6C /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = FC3FDEB027C6383900620D6C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FC3FDEB327C6383900620D6C /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = FC3FDEB227C6383900620D6C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FC3FDE9227C632DE00620D6C /* Resources */ = {
@@ -226,8 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE041A327C661AF00CE1266 /* CityListTableViewController.swift in Sources */,
-				FC3FDE9C27C632DE00620D6C /* DetailViewController.swift in Sources */,
+				FC3FDE9C27C632DE00620D6C /* VideoViewController.swift in Sources */,
 				FC3FDE9827C632DE00620D6C /* AppDelegate.swift in Sources */,
 				FC3FDE9A27C632DE00620D6C /* SceneDelegate.swift in Sources */,
 			);
@@ -447,25 +358,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FCE0419D27C63C8B00CE1266 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FCE0419E27C63C8C00CE1266 /* TinyConstraints */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FCE0419D27C63C8B00CE1266 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
-			productName = TinyConstraints;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC3FDE8C27C632DE00620D6C /* Project object */;
 }
