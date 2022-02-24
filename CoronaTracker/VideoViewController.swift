@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class ViewController: UIViewController {
+class VideoViewController: UIViewController {
      override func viewDidLoad() {
                 super.viewDidLoad()
         
