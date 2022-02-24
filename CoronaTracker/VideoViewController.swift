@@ -17,8 +17,8 @@ class VideoViewController: UIViewController {
                 // Modally present the player and call the player's play() method when complete.
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+
+    @IBAction func clicked(_ sender: Any) {
         guard let url = URL(string: "https://media.praaly.fr/praaly/videos/8f27167ce98b97841471c274384d2935.mp4") else { return }
         print("yo")
 
@@ -33,8 +33,7 @@ class VideoViewController: UIViewController {
            
         }
     }
-
-
+    
 
 }
 

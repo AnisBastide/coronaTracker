@@ -10,6 +10,7 @@
 		FC38899C27C7EE4300B2C0AF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38899B27C7EE4300B2C0AF /* DetailViewController.swift */; };
 		FC38899E27C7EF8200B2C0AF /* CityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38899D27C7EF8200B2C0AF /* CityListTableViewController.swift */; };
 		FC3889A127C7F01300B2C0AF /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = FC3889A027C7F01300B2C0AF /* TinyConstraints */; };
+		FC3889AE27C7F5A800B2C0AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3889AD27C7F5A800B2C0AF /* TabBarController.swift */; };
 		FC3FDE9827C632DE00620D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9727C632DE00620D6C /* AppDelegate.swift */; };
 		FC3FDE9A27C632DE00620D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */; };
 		FC3FDE9C27C632DE00620D6C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */; };
@@ -39,6 +40,7 @@
 		FC38899B27C7EE4300B2C0AF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FC38899D27C7EF8200B2C0AF /* CityListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewController.swift; sourceTree = "<group>"; };
 		FC3889A227C7F0B900B2C0AF /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		FC3889AD27C7F5A800B2C0AF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FC3FDE9427C632DE00620D6C /* CoronaTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3FDE9727C632DE00620D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3FDE9927C632DE00620D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				FC38899D27C7EF8200B2C0AF /* CityListTableViewController.swift */,
 				FC3FDE9B27C632DE00620D6C /* VideoViewController.swift */,
 				FC3FDE9D27C632DE00620D6C /* Main.storyboard */,
+				FC3889AD27C7F5A800B2C0AF /* TabBarController.swift */,
 				FC3FDEA027C632E100620D6C /* Assets.xcassets */,
 				FC3FDEA227C632E100620D6C /* LaunchScreen.storyboard */,
 				FC3FDEA527C632E100620D6C /* Info.plist */,
@@ -206,6 +209,7 @@
 				FC3FDE9C27C632DE00620D6C /* VideoViewController.swift in Sources */,
 				FC3FDE9827C632DE00620D6C /* AppDelegate.swift in Sources */,
 				FC3FDE9A27C632DE00620D6C /* SceneDelegate.swift in Sources */,
+				FC3889AE27C7F5A800B2C0AF /* TabBarController.swift in Sources */,
 				FC38899C27C7EE4300B2C0AF /* DetailViewController.swift in Sources */,
 				FC38899E27C7EF8200B2C0AF /* CityListTableViewController.swift in Sources */,
 			);

@@ -59,6 +59,17 @@
                     <view key="view" contentMode="scaleToFill" id="W0b-cT-amc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egt-Ur-6Ws">
+                                <rect key="frame" x="155" y="377" width="106" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Watch Video"/>
+                                <connections>
+                                    <action selector="clicked:" destination="RKX-ko-BCQ" eventType="touchUpInside" id="XL5-jr-qnp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wlg-vW-jbH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -90,7 +101,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fyO-xl-eJ6">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="45I-AI-Jvh" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="45I-AI-Jvh" customClass="TabBarController" customModule="CoronaTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JId-wp-npV">
                         <autoresizingMask key="autoresizingMask"/>
