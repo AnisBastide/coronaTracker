@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="2279.7101449275365" y="117.85714285714285"/>
         </scene>
-        <!--Item-->
+        <!--PDF-->
         <scene sceneID="ghs-gP-Aqm">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBn-JR-oib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,12 +64,12 @@
                         <viewLayoutGuide key="safeArea" id="dqu-Jc-zDK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="19J-Ka-Zsl"/>
+                    <tabBarItem key="tabBarItem" title="PDF" image="filemenu.and.cursorarrow.rtl" catalog="system" selectedImage="filemenu.and.selection" id="19J-Ka-Zsl"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="184" y="862"/>
         </scene>
-        <!--Item-->
+        <!--Video-->
         <scene sceneID="RA2-pv-fYc">
             <objects>
                 <viewController storyboardIdentifier="Video" id="RKX-ko-BCQ" customClass="VideoViewController" customModule="CoronaTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,17 +90,17 @@
                         <viewLayoutGuide key="safeArea" id="Wlg-vW-jbH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mRD-Oz-8Mj"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="play" catalog="system" selectedImage="play.fill" id="mRD-Oz-8Mj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGM-fx-E1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="839" y="811"/>
         </scene>
-        <!--Item-->
+        <!--Department-->
         <scene sceneID="576-IN-GEd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rol-Du-htt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ab5-9E-g57"/>
+                    <tabBarItem key="tabBarItem" title="Department" image="map" catalog="system" selectedImage="map.fill" id="ab5-9E-g57"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K5W-HD-Zqn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -122,6 +123,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JId-wp-npV">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="Rol-Du-htt" kind="relationship" relationship="viewControllers" id="OGb-j1-tpT"/>
@@ -135,6 +137,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="filemenu.and.cursorarrow.rtl" catalog="system" width="128" height="88"/>
+        <image name="filemenu.and.selection" catalog="system" width="128" height="93"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
